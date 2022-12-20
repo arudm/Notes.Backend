@@ -14,7 +14,7 @@ namespace Notes.Persistence
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfiguration(new NoteConfiguration()); // Применяем конфигурацию сущности Note
-            base.OnModelCreating(builder);
+            base.OnModelCreating(builder); // Вызываем базовый метод
         }
     }
 }
